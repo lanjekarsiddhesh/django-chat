@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'APP',
+    'APP.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,58 @@ MEDIA_ROOT = BASE_DIR/'media'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'APP.CustomUser'
+
+
+
+'''
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/accounts/login'
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://www.example.com",
+]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # or sendgrid etc..
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = os.environ['SENDGRID_API_KEY']
+# EMAIL_HOST_PASSWORD = ''
+
+# django-allauth config
+ACCOUNT_SESSION_COOKIE_AGE=60*60  # One hour session cookie
+ACCOUNT_SIGNUP_FORM_CLASS = 'users.forms.Signup FormExtra'
+SOCIALACCOUNT_PROVIDERS = {
+   'google': {
+       'SCOPE': [
+           'profile',
+           'email',
+       ],
+       'AUTH_PARAMS': {
+           'access_type':'online',  
+       }
+   },
+}
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+        'height': 320,
+        'width': '100%',
+    },
+}
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+DJANGO_WYSIWYG_FLAVOR = 'ckeditor'
+
+DEBUG_TOOLBAR_CONFIG = {
+    "SHOW_TOOLBAR   _CALLBACK" : lambda _request: DEBUG,
+    "INTERCEPT_REDIRECTS": False,
+}
+
+# LOGIN_URL='account_login'   
+# LOGOUT_URL='account_logout'                               
+
+'''

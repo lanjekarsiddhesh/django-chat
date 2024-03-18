@@ -1,0 +1,304 @@
+.card {
+  
+    width:  550px;
+    height: 550px;
+    background:rgb(202, 202, 202);
+    /* background: #E8EAEA; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* place-content: center; */
+    /* align-items: center; */
+    /* padding: 1rem; */
+  
+    
+  }
+  
+  /* Register Page */
+  
+  .wrapper {
+      --input-focus: #2d8cf0;
+      --font-color: #323232;
+      --font-color-sub: #666;
+      --bg-color: #fff;
+      --bg-color-alt: #666;
+      --main-color: #323232;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center;
+        justify-content: center;  */
+  
+        /* place-content: center; */
+  
+    }
+    /* card */ 
+    
+    .flip-card__inner {
+      width: 300px;
+      height: 350px;
+      /* position: relative; */
+      background-color: transparent;
+        /* width: 100%;
+        height: 100%; */
+      text-align: center;
+    }
+    
+    
+    .flip-card__back {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: lightgrey;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      box-shadow: 4px 4px var(--main-color);
+    }
+    
+    
+    
+    .flip-card__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .title {
+      margin: 20px 0 20px 0;
+      font-size: 35px;
+      font-weight: 900;
+      text-align: center;
+      color: var(--main-color);
+    }
+    
+    .flip-card__input {
+      width: 250px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 4px 4px var(--main-color);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--font-color);
+      padding: 5px 10px;
+      outline: none;
+    }
+    
+    .flip-card__input::placeholder {
+      color: var(--font-color-sub);
+      opacity: 0.8;
+    }
+    
+    
+    
+    .flip-card__btn {
+      margin: 10px 0 10px 0;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 4px 4px var(--main-color);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--font-color);
+      cursor: pointer;
+    } 
+  
+    small .label {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+  
+  
+    /* Home */
+  
+  
+  
+  /* ChatWindow */
+    
+    .chat-header {
+      background-color: #1d0303;
+      color: #fff;
+      padding: 10px;
+      font-size: 18px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 50px;
+    }
+    
+    .circle {
+      height: 50px;
+      width: 50px;
+      background-color: #555;
+      border-radius: 50%;
+    }
+  
+    .chat-window {
+      height: 520px;
+      padding: 1rem;
+      overflow-y: scroll;
+      background-color: #ffffff;
+    }
+  
+    .chat-window::-webkit-scrollbar {
+      display: none;
+  }
+    
+    .message-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+    
+    .chat-input {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      
+      border-top: 1px solid #ccc;
+      background-color: #d5d4d4;
+  
+      border-radius: 0 0 15px 15px;
+      
+    }
+    
+    .message-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 5px;
+      font-size: 15px;
+      border-radius: 30px;
+      height: 40px;
+      padding-left: 40px;
+    }
+    
+    .send-button {
+      border: none;
+      outline: none;
+      background-color: #333;
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 10px;
+      cursor: pointer;
+  
+      margin-left: 1rem;
+  
+      border-radius: 30px;
+      height: 50px;
+    }
+    
+    .send-button:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    }
+  
+  
+    /* home */
+  
+    /* .title, .more {
+      padding: 10px;
+    } */
+    
+    .user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      /* justify-content: space-between; */
+      padding: 10px 15px;
+      margin: 5px;
+      /* background-color: #b02121; */
+    }
+    
+    .user__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+    }
+    
+    .user__container {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      
+  
+    }
+  
+    .user__container::-webkit-scrollbar {
+      display: none;
+  }
+    
+    .title {
+      font-weight: 900;
+      font-size: 1.3em;
+    }
+    
+    .name {
+      font-weight: 800;
+    }
+    
+    .username {
+      font-size: .9em;
+      color: #64696e;
+    }
+    
+    .image {
+      width: 60px;
+      height: 60px;
+      background: rgb(22,19,70);
+      background: linear-gradient(295deg, rgba(22,19,70,1) 41%, rgba(89,177,237,1) 100%);
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  
+  
+    .disable_btn {
+      pointer-events: none;
+      opacity: 0.5;
+      font-size: 14px;
+    }
+    
+    .follow {
+      border: none;
+      border-radius: 25px;
+      background-color: #0f1113;
+      color: white;
+      padding: 8px 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  
+    .btn-grp{
+      gap: 2rem ;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    
+    .more {
+      display: block;
+      text-decoration: none;
+      color: rgb(29, 155, 240);
+      font-weight: 800;
+    }
+    
+    .user:hover {
+      background-color: #c3bebe;
+    }
+    
+    .more:hover {
+      background-color: #b3b6b6;
+      border-radius: 0px 0px 15px 15px;
+    }
+    
+    .follow:hover {
+      background-color: #394149;
+    }
